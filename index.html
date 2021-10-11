@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2 id="appTitle">Pomodoro TIMER</h2>
+    <div class="app">
+      <div class="controls">
+        <img src="./images/volume.png" alt="" srcset="" />
+        <img src="./images/music.png" alt="" />
+      </div>
+      <div class="timer">
+        <input
+          type="input"
+          name="userTask"
+          class="taskField"
+          placeholder="Briefly mention the task here"
+        />
+        <img
+          src="./images/play-button.png"
+          data-toggle="play"
+          alt="start"
+          class="start"
+        />
+        <svg
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="white"
+            stroke-width="20"
+          />
+        </svg>
+        <svg
+          class="moving-outline"
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#00b8e6" />
+              <stop offset="100%" stop-color="#00e1d6" />
+            </linearGradient>
+          </defs>
+          <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="url(#linear)"
+            stroke-width="20"
+          />
+        </svg>
+        <div class="time-display">0:00</div>
+        <!--<div class="task">
+          <p>Task : <span>Complete course</span></p>
+        </div>-->
+      </div>
+      <div class="right">
+        <h3><img src="./images/list.png" alt="" /> Completed Pomodoros</h3>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

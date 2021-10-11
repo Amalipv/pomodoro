@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  background: #30334b;
+  color: #fff;
+}
+#appTitle {
+  text-align: center;
+}
+::placeholder {
+  color: #000;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    ::placeholder {
+      color: #000;
+    }
+  }
+  to {
+    ::placeholder {
+      color: #fff;
+    }
+  }
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.controls,
+.timer,
+.right {
+  flex: 1;
+  height: 80vh;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.controls {
+  justify-content: space-evenly;
+}
+.timer {
+  position: relative;
+}
+img {
+  width: 40px;
+  height: 40px;
+}
+.timer svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.controls {
+}
+.timer {
+}
+
+.time-display {
+  font-size: 42px;
+  position: relative;
+}
+.task {
+  position: relative;
+  top: 35%;
+}
+h3 {
+  position: relative;
+  bottom: 23%;
+}
+.start {
+  /*margin-top: 120px;*/
+}
+.taskField {
+  height: 40px;
+  width: 400px;
+  border: none;
+  background: none;
+  border-bottom: 1.5px solid #00b8e6;
+}
+.taskField:focus {
+  background: none;
+  outline: none;
+}
